@@ -1,0 +1,46 @@
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  background: rgb(9, 9, 161);
+  padding: 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.user h3 {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+}
+.user p {
+  font-size: 1.3rem;
+}
+.user_img {
+  width: 250px;
+  margin: 0 auto;
+}
+.user_img img {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.user button {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  background: #fff;
+  color: rgb(9, 9, 161);
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: opacity 0.5 ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}

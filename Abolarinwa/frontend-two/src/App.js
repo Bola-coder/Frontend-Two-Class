@@ -5,6 +5,7 @@ import "./App.css";
 // import Count from './components/Count';
 import Navbar from "./components/project navbar/Navbar";
 import Banner from "./components/project navbar/Banner";
+import RandomUser from "./components/project navbar/RandomUser";
 
 function App() {
   document.title = "Navify";
@@ -18,6 +19,7 @@ function App() {
       {/* This is project Navbar */}
       <Navbar />
       <Banner />
+      <RandomUser />
     </div>
   );
 }

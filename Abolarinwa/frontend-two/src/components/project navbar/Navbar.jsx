@@ -31,3 +31,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+export const myName = () => {
+  
+}
