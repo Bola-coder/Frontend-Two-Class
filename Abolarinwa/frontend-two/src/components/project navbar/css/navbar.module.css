@@ -18,6 +18,10 @@
   border-left: 4px solid rgb(9, 9, 161);
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 .links {
   margin-right: 40px;
 }

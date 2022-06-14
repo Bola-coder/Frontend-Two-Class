@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import style from "./css/navbar.module.css";
 import { FaHamburger, FaTimes } from "react-icons/fa";
 
@@ -10,20 +11,20 @@ const Navbar = () => {
   };
   return (
     <nav className={style.nav}>
-      <div className={style.logo}>
+      <div  iv className={style.logo}>
+        <Link to="/">
         <h1>Navify</h1>
+        </Link>
       </div>
       <div className={mobile ? style.mobile_links : style.links}>
         <div className={style.hamburger} onClick={handleMobile}>
           {mobile ? <FaTimes /> : <FaHamburger />}
         </div>
-        <div
-          className={mobile ? style.mobile_link : style.link}
-          onClick={handleMobile}>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#serv">Services</a>
-          <a href="#cont">Contact us</a>
+        <div className={mobile ? style.mobile_link : style.link}>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/random">Random</Link>
+          <Link to="/contact">Contact us</Link>
         </div>
       </div>
     </nav>
@@ -32,6 +33,4 @@ const Navbar = () => {
 
 export default Navbar;
 
-export const myName = () => {
-  
-}
+export const myName = () => {};
