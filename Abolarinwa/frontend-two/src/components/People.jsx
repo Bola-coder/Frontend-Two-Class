@@ -2,6 +2,7 @@ import React from 'react';
 import './../css/person.css'
 
 const People = ({persons}) => {
+
   return (
     <>
         <div className="persons">
