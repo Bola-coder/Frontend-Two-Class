@@ -11,9 +11,9 @@ const Navbar = () => {
   };
   return (
     <nav className={style.nav}>
-      <div  iv className={style.logo}>
+      <div className={style.logo}>
         <Link to="/">
-        <h1>Navify</h1>
+          <h1>Navify</h1>
         </Link>
       </div>
       <div className={mobile ? style.mobile_links : style.links}>
@@ -25,6 +25,7 @@ const Navbar = () => {
           <Link to="/about">About</Link>
           <Link to="/random">Random</Link>
           <Link to="/contact">Contact us</Link>
+          <Link to="/blog">Blog</Link>
         </div>
       </div>
     </nav>
